@@ -1,0 +1,5 @@
+###
+GRPC localhost:6000/hello.AppService/good
+
+###
+GRPC localhost:6000/hello.AppService/great

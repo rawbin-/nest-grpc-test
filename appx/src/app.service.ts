@@ -3,18 +3,15 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return JSON.stringify({
-      code: 0,
-      statusCode: 1,
-      message: 'Hello World!',
-    });
+    return 'good';
   }
 
   getResp(): Record<string, any> {
     return {
-      code: 0,
-      statusCode: 1,
-      message: 'Hello World!',
+      nullValue: null,
+      undefinedValue: undefined,
+      zeroValue: 0,
+      message: 'great',
     };
   }
 }

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package hello;
+
+service AppService {
+    rpc good (EmptyRequest) returns (StringResponse) {}
+    rpc great (EmptyRequest) returns (ObjectResponse) {}
+}
+
+message EmptyRequest {}
+
+message StringResponse {
+    string data = 1;
+    int32 code = 2;
+    int32 statusCode = 3;
+}
+
+message ObjectResponse {
+    map<string, string> data = 1;
+    int32 code = 2;
+    int32 statusCode = 3;
+}
