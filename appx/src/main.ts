@@ -15,7 +15,7 @@ async function bootstrap() {
         package: 'hello', // proto 文件中的 package 名称
         protoPath: join(__dirname, '../proto/hello.proto'), // proto 文件路径
         loader: {
-          defaults: true,
+          defaults: false,
           arrays: true,
           objects: true,
           json: true,
